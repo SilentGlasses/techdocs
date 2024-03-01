@@ -1,0 +1,125 @@
+# Project information
+site_name: TechDocs
+site_description: A guide to writing documentation for techies.
+
+# Copyright
+copyright: 'Copyright &copy; 2024 - Present'
+
+# Navigation
+nav:
+  - Home: 'index.md'
+  - Tools: 'tools.md'
+  - Blog:
+    - 'blog/index.md'
+
+# <!-- START CUSTOMIZATION SECTION -->
+# Documentation and theme
+theme:
+  name: material
+  language: en
+  custom_dir: overrides
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.annotation
+    - content.code.copy
+    - content.tabs.link
+    - navigation.indexes
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - search.share
+  palette:
+    primary: 'white'
+    accent: 'deep orange'
+    toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: 'Rubik'
+    code: 'JetBrains Mono'
+  icon:
+    logo: fontawesome/solid/book
+    repo: fontawesome/brands/github
+
+extra_css:
+    - sylesheets/extra.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.js
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+
+plugins:
+  - search
+  - blog:
+      authors: true
+      archive_date_format: MMMM yyyy
+      pagination: true
+      pagination_per_page: 5
+      pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
+  - ezlinks
+  - git-authors:
+      exclude:
+        - index.md
+        - tags.md
+  - git-revision-date-localized:
+      type: timeago
+      locale: en
+      fallback_to_build_date: true
+      exclude:
+        - index.md
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - codehilite:
+      guess_lang: true
+      use_pygments: true
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.pathconverter
+  - pymdownx.saneheaders
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      base_path: .
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: false
+      toc_depth: 3
+# <!-- END CUSTOMIZATION SECTION -->
