@@ -8,3 +8,5 @@
 ```                                         
 
 A simple Guide to Writing Documentation. While this is aimed at Techies, the ideas shared here can be used for other types of documentation as well.
+
+I know there are tons of reference materials all over the internet but I'd like to also share my thoughts and ideas with the world in hopes that someone finds my way of thinking about and doing documentation helpful.
