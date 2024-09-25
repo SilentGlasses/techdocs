@@ -26,6 +26,8 @@ theme:
     - content.tabs.link
     - navigation.indexes
     - navigation.instant
+    - navigation.path
+    - navigation.prune
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
