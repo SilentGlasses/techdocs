@@ -1,3 +1,6 @@
+![example workflow](https://github.com/SilentGlasses/techdocs/actions/workflows/ci.yml/badge.svg)
+
+
 ```
  _____         _    ______               
 |_   _|       | |   |  _  \              
