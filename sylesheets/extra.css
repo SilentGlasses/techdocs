@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&family=IBM+Plex+Sans:wght@200;400;700&family=Share+Tech&display=swap');
+
+html{background: #f0f2f7 !important;}
+.md-grid {max-width: initial;}
+.md-footer{display: none;}
+.md-banner__inner {color: #eceff4 !important;}
+
+.md-header__topic {font-size: 1.5rem; font-weight: 200 !important;}
+.md-header {position: sticky;}
+
+/* Navigation Tweaks */
+.md-sidebar {color: #385676;}
+.md-nav {font-size: .6rem;line-height: 1.5;}
+
+
+/* Font Stuff */
+a.toclink {color: #4d547e;}
+.admonition, .md-typeset details {font-size: .8rem;}
+.md-typeset {
+  font-family: 'IBM Plex Sans';
+  font-size: .9rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #2e3440 !important;
+  color-adjust: exact;
+  text-align: left;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.md-typeset blockquote,
+.md-typeset ul li blockquote,
+.md-typeset ul li p,
+.md-typeset .admonition.quote,
+.git-revision-date-localized-plugin,
+.git-revision-date-localized-plugin-date {font-family: 'Share Tech', monospace; margin-bottom: 1rem;}
+
+/* Pre Code Boxes */
+.md-typeset pre, code {
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+}
+.md-typeset code {
+	color: #476582 !important;
+	font-size: .875em!important;
+	background-color: #f1f1f1 !important;
+	border: solid 1px #EEE;
+	border-radius: 4px;
+	overflow-x: auto;
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+}
+
+/* Highlighting */
+.md-typeset mark {
+	margin: 0.25em;
+	padding: .0625em 0;
+	border-radius: .1rem;
+	background-color: #dcfe5f;
+	box-shadow: .25em 0 0 #dcfe5f, -.25em 0 0 #dcfe5f;
+	word-break: break-word;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+}
+
+/* Heading Sizes */
+.md-typeset h1, h2 {font-family: 'Barlow', 'IBM Plex Sans'; color: #575757; border-bottom: 1px inset #ccc;}
+.md-typeset h3, h4 {font-family: 'Barlow'; font-weight: 300; color: #757575; border-bottom: 1px inset #ccc;}
+.md-typeset h1 {font-size: 2.5rem; text-transform: uppercase;}
+.md-typeset h2 {font-size: 2rem;}
+.md-typeset h3 {font-size: 1.75rem;}
+.md-typeset h4 {font-size: 1.5rem;}
+
+/* Statement */
+.statement {color: #FFFFFF;font-size: 1.2rem;border-radius: 6px;background-color: #4c566a;padding: 20px;position: relative;text-align: center;margin-top: 5px;margin-bottom: 5px;}
+.statement h2.statehead {font-size: 1.25rem !important;color: #FFFFFF;font-weight: bolder;background-color: #4c566a;border: none;margin-top: 0px;}
+
+/* Table */
+.md-typeset__table,.md-typeset table:not([class]) {
+	display: table !important;
+	word-wrap: break-word;
+	min-width: 100%;
+}
+.md-typeset table:not([class]) th {
+	background-color: #4c566a;
+	color: #FFFFFF;
+  text-transform: uppercase;
+	text-align: center !important;
+	vertical-align: middle;
+	word-wrap: break-word;
+}
+
+/* Responsive iframe*/
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+   /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */;
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Figure */
+.md-typeset figure {
+  max-width: 75%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 6px rgba(55, 84, 170, .15), -7px -7px 15px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+}
+.md-typeset figure > img {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f3f4f7;
+  border-radius: 10px;
+  border: 5px solid #f3f4f7;
+  box-shadow: 3px 3px 6px rgba(55, 84, 170, .15), -7px -7px 15px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+}
+.md-typeset figcaption {
+  font-family: 'Share Tech', monospace;
+  font-style: normal;
+  margin: .5em auto .5em;
+}
